@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">INFORMATION </div>
+    <div id="d2">INFORMATION </div>
+    <div id="d3">INFORMATION </div>
+    <div id="d4">INFORMATION </div>
+    <div id="d5">INFORMATION </div>
+    <script>
+        const info={
+            name:"karthika",daprt:"CSC",color:"Red",
+            name1: function()
+            {
+                return this.name+"welocme ";
+            }
+              };
+        document.getElementById("d1").innerHTML=info.name; 
+        document.getElementById("d2").innerHTML=info.color;
+        document.getElementById("d3").innerHTML=info.daprt;
+        document.getElementById("d4").innerHTML=info["daprt"]+"welcome you"+info["name"];
+        document.getElementById("d5").innerHTML=info.name1();
+
+    </script>
+</body>
+</html>

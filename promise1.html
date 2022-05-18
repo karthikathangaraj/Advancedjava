@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var p1=new Promise(function(resolve,reject)
+        {
+            const x="karthika";
+            const y="anitha";
+            if(x==y)
+            {
+                resolve();
+            }
+            else{
+                reject();
+            }
+        });
+    p1.then(function()
+    {
+        console.log("u have been good to go");
+    }).catch(function()
+    {
+        console.log("sorry ur page is not loaded");
+    });
+    </script>
+</body>
+</html>

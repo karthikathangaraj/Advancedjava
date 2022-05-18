@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   /* var m=100;
+    function display()
+    {
+        var m=200;
+        console.log(m);
+        console.log(this.m);
+    }
+    display();
+    var o1=new display();
+    console.log(o1.m);
+
+
+    function f1()
+    {
+        alert("hi Team");
+    }
+ //f1();
+   // f1.call();
+    f1.apply();
+    */
+
+   //Bind Method 
+
+   var a=1;
+   function disk(callback)
+   {
+       var a=2;
+       callback();
+
+   };
+   var o1={a:10,disk1:function(){
+       document.write("welcome Team");
+   }};
+   disk(o1.disk1);
+   disk(o1.disk1.bind(o1));
+</script>
+
+</body>
+</html>
