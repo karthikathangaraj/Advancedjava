@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Myserv1</display-name>
+  <servlet>
+    <description></description>
+    <display-name>Ser1</display-name>
+    <servlet-name>Ser1</servlet-name>
+    <servlet-class>com.application.App</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ser1</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>JI</display-name>
+    <servlet-name>JI</servlet-name>
+    <servlet-class>com.application.JI</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JI</servlet-name>
+    <url-pattern>/JI</url-pattern>
+  </servlet-mapping>
+</web-app>
